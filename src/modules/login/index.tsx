@@ -31,7 +31,7 @@ const Login: React.FC = () => {
 
   useEffect(() => {
     if(userInfo) {
-      window.location.href = 'http://localhost:3000/'    }
+      window.location.href = 'https://glistening-pudding-e7190b.netlify.app/'    }
   },[userInfo])
   return (
     <Wrapper>
