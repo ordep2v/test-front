@@ -17,10 +17,10 @@ const App: React.FC = () => {
 
   useEffect(() => {
     if (!userInfo && !window.location.href.includes('/login')) {
-      window.location.href = 'http://localhost:3000/login';
+      window.location.href = 'https://glistening-pudding-e7190b.netlify.app/login';
     }
     if (userInfo && window.location.href.includes('/login')) {
-      window.location.href = 'http://localhost:3000/';
+      window.location.href = 'https://glistening-pudding-e7190b.netlify.app/';
     }
 
     return () => setDeviceWidth(window.innerWidth);
