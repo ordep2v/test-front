@@ -11,7 +11,7 @@ export const signin =
     dispatch({ type: USER_SIGNIN_REQUEST, payload: { login, password } });
     try {
       const { data } = await axios.post(
-        'http://localhost:3001/api/user/login',
+        'https://test-api-s7pj.onrender.com/api/user/login',
         { login, password },
       );
       dispatch({ type: USER_SIGNIN_SUCCESS, payload: data });

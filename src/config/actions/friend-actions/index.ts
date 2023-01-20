@@ -14,7 +14,7 @@ export const get =
       const {
         userSignin: { userInfo },
       } = getState();
-      const { data } = await axios.get('http://localhost:3001/api/user/list-friends', {
+      const { data } = await axios.get('https://test-api-s7pj.onrender.com/api/user/list-friends', {
         headers: {
           Token: `${userInfo.token}`,
         },
